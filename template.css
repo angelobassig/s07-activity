@@ -1,0 +1,100 @@
+* {
+  font-family: "Courier New", monospace;
+  font-size: 20px;
+}
+
+body {
+  background-color: skyblue;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#zuitt-motto {
+  letter-spacing: 5px;
+}
+
+h3 {
+  letter-spacing: 25px;
+}
+
+section ol {
+  list-style-type: none;
+}
+
+ol li {
+  text-transform: uppercase;
+  color: #075966;
+}
+
+form {
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  height: 185px;
+  width: 25vw;
+  position: relative;
+  left: 37.25%;
+}
+
+input[required] {
+  border-width: 2px;
+  border-style: solid;
+  border-color: navy;
+  width: 90%;
+}
+
+button {
+  background-color: #cf0053;
+  color: white;
+  border: 0;
+  border-radius: 15px;
+}
+
+section, h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: white;
+}
+
+a:hover {
+  background-color: #b4d6de;
+}
+
+div {
+  display: inline-block;
+  float: right;
+}
+
+h1 {
+  color: yellow !important;
+  font-size: 2rem;
+}
+
+/*landing section*/
+section {
+  height: 100vh;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+img {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body section form label {
+  color: navy;
+}
+
+/*# sourceMappingURL=template.css.map */

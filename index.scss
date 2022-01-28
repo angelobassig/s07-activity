@@ -1,0 +1,123 @@
+@use 'defaults';
+@use 'sass:math';
+
+$default-letter-space: 5px;
+
+// My created variables
+$button-border-radius: 15px;
+$h1-font-size: 2rem;
+$section-height: 100vh;
+$h2-font-size: 1.5rem;
+$img-height: 300px;
+$img-width: 300px;
+$img-border-radius: 150px;
+$button-background-color: #cf0053;
+$button-color: white; 
+$button-border: 0;
+
+#zuitt-motto {
+	letter-spacing: $default-letter-space;
+}
+
+h3 {
+	letter-spacing: $default-letter-space + math.div(100px, 5px);
+}
+
+section {
+	ol {
+		list-style-type: none;
+	}
+}
+
+ol {
+	li {
+		text-transform: uppercase;
+		color: #075966;
+	}
+}
+
+@mixin container($text-align: center, $height: 0px, $width: 0vw) {
+	text-align: $text-align;
+    background-color: white;
+    border: 2px solid black;
+    height: $height;
+    width: $width;
+    position: relative;
+    left: 37.25%;
+}
+
+@mixin container2($border-width: 0px, $border-style: dotted, $border-color: navy) {
+	border-width: $border-width;
+    border-style: $border-style;
+    border-color: navy;
+    width: 90%;
+}
+
+form {
+	@include container($height: 185px, $width: 25vw);
+}
+
+input[required] {
+	@include container2($border-width: 2px, $border-style: solid);
+}
+
+button {
+    background-color: $button-background-color;
+    color: $button-color;
+    border: $button-border;
+    border-radius: $button-border-radius;
+}
+
+%center-text {
+	text-align: center;
+}
+
+
+nav {
+    background-color: white;
+}
+
+a:hover {
+    background-color: #b4d6de;
+}
+
+div {
+    display: inline-block;
+    float: right;
+}
+
+h1 {
+    color: yellow !important;
+    font-size: $h1-font-size;
+    @extend %center-text;
+}
+
+/*landing section*/
+section {
+    height: $section-height;
+    @extend %center-text;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+img {
+    height: $img-height;
+    width: $img-width;
+    border-radius: $img-border-radius;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	section {
+		form {
+			label {
+				color: rgb(0,0,128);
+			}
+		}
+	}
+}
